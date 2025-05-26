@@ -1,3 +1,4 @@
+score=0
 attempt = 0
 max_attempts = 3
 
@@ -11,6 +12,8 @@ while attempt < max_attempts:
     user = input("Your answer: ")
     if user.lower() == "c":
         print("Correct Answer")
+        score+=1
+        
         break
     else:
         print("Try another one")
@@ -34,6 +37,7 @@ while attempt<max_attempts:
 
     if user.lower() =="b":
         print("Correct Answer")
+        score+=1
         break
     else:
         print("Try again")
@@ -57,6 +61,7 @@ while attempt<max_attempts:
 
     if user.lower()=="b":
         print("Congratulation")
+        score+=1
         break
     else:
         print("Try again ")
@@ -78,6 +83,7 @@ while attempt<max_attempts:
     if user.lower()=="b":
 
         print("Good job")
+        score+=1
         break
     else:
         print("Try again")
@@ -102,6 +108,8 @@ while attempt<max_attempts:
     
 
         print("Correct Answer")
+        score+=1
+    
         break
     else:
         print("Try again")
@@ -109,6 +117,8 @@ while attempt<max_attempts:
 
 if attempt == max_attempts:
     print("No more attempts left for this question.")
+
+print(f"\nYour final score is: {score} out of 5")
   
 
 
